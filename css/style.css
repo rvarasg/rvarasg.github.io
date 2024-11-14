@@ -8,7 +8,7 @@
 body
 {
     font-family: 'Lato', sans-serif;
-    color: #41484b;
+    color: #fff;
 }
 
 
@@ -359,7 +359,7 @@ footer .copyright
 body
 {
     font-family: 'Lato', sans-serif;
-    color: #41484b;
+    color: #fff;
 }
 
 
@@ -429,7 +429,7 @@ body
 .feature-box h1
 {
     font-size: 35px;
-    background-color: #41484b;
+    background-color: #fff;
     text-transform: uppercase;
     font-weight: 600;   
     margin-top: 0em;
