@@ -428,9 +428,10 @@ body
 .feature-box h1
 {
     font-size: 35px;
+    background-color: #41484b;
     text-transform: uppercase;
     font-weight: 600;   
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .feature-box p
