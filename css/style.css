@@ -95,7 +95,7 @@ body
 
 /* Popup Overlay - Centers the popup */
 .popup-overlay {
-    display: none;
+    display: none; /* The popup should be hidden by default */
     position: fixed;
     top: 0;
     left: 0;
@@ -107,6 +107,7 @@ body
     align-items: center;
     z-index: 9999;
 }
+
 
 /* Popup Content with Background */
 .popup-content {
