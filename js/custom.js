@@ -18,22 +18,21 @@ $(document).ready(function () {
         var popupId = $(this).attr("data-popup");
         var bgImage = $(this).attr("data-bg");
 
-        // Apply background image dynamically
+        // Apply the background image to the popup content dynamically
         $("#" + popupId + " .popup-content").css("background-image", "url('" + bgImage + "')");
 
-        $("#" + popupId).fadeIn(); // This will open the popup
+        $("#" + popupId).fadeIn(); // Open the popup
     });
 
     // Close popup when clicking the close button
     $(".close-popup").click(function () {
-        $(this).closest(".popup-overlay").fadeOut(); // This will close the popup
+        $(this).closest(".popup-overlay").fadeOut(); // Close the popup
     });
 
     // Close popup when clicking outside the popup content
     $(".popup-overlay").click(function (e) {
         if ($(e.target).is(".popup-overlay")) {
-            $(this).fadeOut(); // This will close the popup if clicking outside
+            $(this).fadeOut(); // Close if clicking outside
         }
     });
 });
-
