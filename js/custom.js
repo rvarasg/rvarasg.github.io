@@ -16,6 +16,11 @@ $(document).ready(function () {
     // Open popup when clicking an image container
     $(".popup-container").click(function () {
         var popupId = $(this).attr("data-popup");
+        var bgImage = $(this).attr("data-bg");
+
+        // Apply background image dynamically
+        $("#" + popupId + " .popup-content").css("background-image", "url('" + bgImage + "')");
+
         $("#" + popupId).fadeIn();
     });
 
