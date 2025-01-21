@@ -12,27 +12,23 @@ $(document).ready(function() {
 
 });
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Open popup
-    document.querySelectorAll(".open-popup").forEach(button => {
-        button.addEventListener("click", function () {
-            const popupId = this.getAttribute("data-popup");
-            document.getElementById(popupId).style.display = "flex";
-        });
+$(document).ready(function () {
+    // Open popup when clicking an image
+    $(".popup-trigger").click(function () {
+        var popupId = $(this).attr("data-popup");
+        $("#" + popupId).fadeIn();
     });
 
-    // Close popup
-    document.querySelectorAll(".close-popup").forEach(button => {
-        button.addEventListener("click", function () {
-            this.parentElement.parentElement.style.display = "none";
-        });
+    // Close popup when clicking close button
+    $(".close-popup").click(function () {
+        $(this).closest(".popup-overlay").fadeOut();
     });
 
-    // Close on clicking outside
-    document.querySelectorAll(".popup-overlay").forEach(popup => {
-        popup.addEventListener("click", function (e) {
-            if (e.target === this) this.style.display = "none";
-        });
+    // Close popup when clicking outside of it
+    $(".popup-overlay").click(function (e) {
+        if ($(e.target).is(".popup-overlay")) {
+            $(this).fadeOut();
+        }
     });
 });
+
