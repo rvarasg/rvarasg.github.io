@@ -13,18 +13,18 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-    // Open popup when clicking an image
-    $(".popup-trigger").click(function () {
+    // Open popup when clicking an image container
+    $(".popup-container").click(function () {
         var popupId = $(this).attr("data-popup");
         $("#" + popupId).fadeIn();
     });
 
-    // Close popup when clicking close button
+    // Close popup when clicking the close button
     $(".close-popup").click(function () {
         $(this).closest(".popup-overlay").fadeOut();
     });
 
-    // Close popup when clicking outside of it
+    // Close popup when clicking outside the popup content
     $(".popup-overlay").click(function (e) {
         if ($(e.target).is(".popup-overlay")) {
             $(this).fadeOut();
