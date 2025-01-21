@@ -114,7 +114,7 @@ body
     background-position: center; /* Ensure it’s centered */
     background-repeat: no-repeat;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 0px;
     width: 50%;
     text-align: center;
     position: relative;
@@ -131,7 +131,8 @@ body
     background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
     display: inline-block;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 0px;
+    font-size: 24px;
 }
 
 .close-popup {
