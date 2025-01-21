@@ -92,7 +92,6 @@ body
     box-sizing: border-box; /* Prevent overflow */
 }
 
-
 /* Popup Overlay - Centers the popup */
 .popup-overlay {
     display: none; /* The popup should be hidden by default */
@@ -111,8 +110,8 @@ body
 
 /* Popup Content with Background */
 .popup-content {
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Make the background image cover the whole area */
+    background-position: center; /* Ensure it’s centered */
     background-repeat: no-repeat;
     padding: 40px;
     border-radius: 10px;
@@ -124,16 +123,17 @@ body
     max-width: 600px;
     max-height: 80vh;
     overflow-y: auto;
-    color: white;
+    color: white;  /* Text color should be white for visibility */
 }
 
-/* Make sure text is readable */
+/* Ensure the title and content remain visible over the background */
 .popup-content h2, .popup-content p {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
     display: inline-block;
     padding: 10px;
     border-radius: 5px;
 }
+
 .close-popup {
     position: absolute;
     top: 10px;
