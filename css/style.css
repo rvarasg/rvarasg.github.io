@@ -59,7 +59,7 @@ body
 
 
 /* NEW /*
-/* Popup Overlay */
+/* Popup Overlay - Ensures it stays above everything */
 .popup-overlay {
     display: none;
     position: fixed;
@@ -67,10 +67,12 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
+    z-index: 9999; /* Super high to be above everything */
 }
+
 
 /* Popup Content */
 .popup-content {
@@ -80,7 +82,8 @@ body
     width: 50%;
     text-align: center;
     position: relative;
-}
+    z-index: 10000; /* Ensure it's above the overlay */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 
 /* Close Button */
 .close-popup {
@@ -102,30 +105,6 @@ body
     cursor: pointer;
 }
 
-/* Popup Overlay - Ensures it stays above everything */
-.popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Super high to be above everything */
-}
-
-/* Popup Content */
-.popup-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    text-align: center;
-    position: relative;
-    z-index: 10000; /* Ensure it's above the overlay */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Fix for other elements */
