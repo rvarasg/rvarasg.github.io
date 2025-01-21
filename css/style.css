@@ -76,17 +76,22 @@ body
 /* Title Over Image */
 .popup-title {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;  /* Cover the entire height of the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 28px;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
     text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Prevent overflow */
 }
+
 
 /* Popup Overlay - Centers the popup */
 .popup-overlay {
