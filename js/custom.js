@@ -18,10 +18,10 @@ $(document).ready(function () {
     // Ensure all popups are hidden on page load
     $(".popup-overlay").hide();
 
-    // Handle clicking a popup trigger
-    $(".popup-container").on("click", function () {
-        const popupId = $(this).data("popup"); // Get the popup ID
-        const bgImage = $(this).data("bg"); // Get the background image
+    // Ensure popups open when clicking an image inside the container
+    $(".popup-container, .popup-trigger").on("click", function () {
+        const popupId = $(this).closest(".popup-container").data("popup"); // Get the popup ID
+        const bgImage = $(this).closest(".popup-container").data("bg"); // Get the background image
 
         // Debugging logs
         console.log(`Clicked popup-container. Popup ID: ${popupId}, Background Image: ${bgImage}`);
@@ -33,7 +33,9 @@ $(document).ready(function () {
         }
 
         // Apply background image and show the popup
-        $(`#${popupId} .popup-content`).css("background-image", `url('${bgImage}')`);
+        if (bgImage) {
+            $(`#${popupId} .popup-content`).css("background-image", `url('${bgImage}')`);
+        }
         $(`#${popupId}`).fadeIn(); // Display the popup
     });
 
@@ -51,3 +53,4 @@ $(document).ready(function () {
         }
     });
 });
+
