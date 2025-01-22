@@ -218,7 +218,7 @@ body
 .section-title h2 {
     font-size: 45px;
     font-weight: bold;
-    color: MediumPurple; /* Adjust if needed */
+    color: SlateBlue; /* Adjust if needed */
     margin-bottom: 10px;
 }
 
@@ -226,7 +226,7 @@ body
 .horizontal-line {
     width: 500px; /* Adjust width as needed */
     height: 4px;
-    background-color: MediumPurple;
+    background-color: SlateBlue;
     margin: 0 auto; /* Centers the line */
 }
 
