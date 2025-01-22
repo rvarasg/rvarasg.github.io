@@ -417,7 +417,7 @@ body
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Align columns at the top */
     max-width: 1000px;
     margin: 0 auto;
     text-align: left;
@@ -455,15 +455,20 @@ body
 }
 
 /* Social Media Icons */
-.footer-column i {
-    font-size: 28px;
+.footer-column i, .footer-column img.social-icon {
+    width: 30px; /* Size of icons */
+    height: 30px;
     margin: 10px;
-    color: white;
     transition: 0.3s ease-in-out;
 }
 
+/* ORCID & Social Icons Hover Effect */
+.footer-column img.social-icon:hover {
+    opacity: 0.7; /* Slight fade effect on hover */
+}
+
 .footer-column i:hover {
-    color: #FFD700; /* Gold on hover */
+    color: Plum; /* Gold on hover */
 }
 
 
