@@ -183,32 +183,19 @@ body
 }
 
 
-/* Add white space between sections */
-.spacer {
-    height: 50px; /* Adjust as needed */
-    width: 100%;
-    background: white; /* Ensures the gap is visible */
+/* New Row Styling */
+.new-row {
+    margin-top: 50px; /* Add white space above the new row */
+    justify-content: space-between; /* Ensure space between images */
+    display: flex; /* Align images in a single row */
 }
 
-/* Ensure the three images are on the same row */
-.new-popup-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between images */
-    margin: 0 auto;
+/* Smaller Image Container */
+.new-row .popup-container {
+    width: 70%; /* Make smaller images 70% of the original size */
+    margin: 0 auto; /* Center align smaller images */
 }
 
-/* Reduce size of the three new images */
-.small-popup {
-    width: 70%; /* Makes them 70% the size of the original images */
-}
-
-/* Make sure images inside small popups also scale */
-.small-popup img {
-    width: 100%;
-    display: block;
-    border-radius: 0px;
-}
 
 
 /* NEW /*
