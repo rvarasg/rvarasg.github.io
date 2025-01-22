@@ -13,12 +13,15 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
+    // Ensure all popups are hidden when the page loads
+    $(".popup-overlay").hide();
+
     // Open popup when clicking an image container
     $(".popup-container").click(function () {
         var popupId = $(this).attr("data-popup");
         var bgImage = $(this).attr("data-bg");
 
-        // Apply the background image to the popup content dynamically
+        // Apply the background image dynamically
         $("#" + popupId + " .popup-content").css("background-image", "url('" + bgImage + "')");
 
         $("#" + popupId).fadeIn(); // Open the popup
@@ -36,3 +39,4 @@ $(document).ready(function () {
         }
     });
 });
+
