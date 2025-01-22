@@ -215,6 +215,11 @@ body
     border-radius: 0px;
 }
 
+.white-space {
+    height: 50px; /* Adjust this value for more/less white space */
+}
+
+
 
 /* NEW /*
 
