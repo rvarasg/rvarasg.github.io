@@ -456,8 +456,8 @@ body
 
 /* Social Media Icons */
 .footer-column i, .footer-column img.social-icon {
-    width: 30px; /* Size of icons */
-    height: 30px;
+    width: 80px; /* Size of icons */
+    height: 80px;
     margin: 10px;
     transition: 0.3s ease-in-out;
 }
