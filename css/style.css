@@ -462,41 +462,38 @@ body
     transition: 0.3s ease-in-out;
 }
 
-/* Ensure ORCID logo aligns perfectly with FontAwesome icons */
-.footer-column .social-icon {
-    width: 36px; /* Match icon size */
-    height: 36px;
-    margin: 10px;
-    vertical-align: middle; /* Aligns with text/icons */
-    display: inline-block;
-    position: relative;
-    top: 2px; /* Adjust as needed */
-}
-
 .footer-column i:hover {
     color: Plum; /* Gold hover effect */
+}
+
+/* ORCID, LinkedIn, GitHub Icons */
+.footer-column i {
+    vertical-align: middle; /* Ensure icons align with text */
+    display: inline-block;
+    line-height: 1; /* Normalize the line height */
 }
 
 /* Copyright Text Styling */
 .footer-copyright {
     position: absolute;
-    bottom: 10px; /* Places it at the very bottom */
+    bottom: 5px; /* Move it a little lower */
     width: 100%;
     text-align: center;
-    font-size: 12px; /* Makes it small */
-    color: white; /* Ensures visibility */
+    font-size: 10px; /* Make it even smaller */
+    color: white; /* Ensures readability */
 }
 
 /* Copyright Link Styling */
 .footer-copyright a {
-    color: #FFD700; /* Gold color for visibility */
+    color: Plum; /* Gold color for visibility */
     text-decoration: none;
-    font-size: 12px;
+    font-size: 10px; /* Match the small size */
 }
 
 .footer-copyright a:hover {
-    color: #FFA500; /* Orange on hover */
+    color: Indigo; /* Orange on hover */
 }
+
 
 
 
