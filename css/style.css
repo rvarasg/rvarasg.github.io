@@ -119,7 +119,7 @@ body
 
 /* Popup Content with Background */
 .popup-content {
-    background-size: cover; /* Make the background image cover the whole area */
+    background-size: contain; /* Make the background image cover the whole area */
     background-position: center; /* Ensure it’s centered */
     background-repeat: no-repeat;
     padding: 40px;
