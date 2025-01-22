@@ -190,22 +190,15 @@ body
 
 /* Ensure the three images are on the same row */
 .new-popup-row {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     gap: 20px; /* Space between images */
     margin: 0 auto;
 }
 
-/* White Space Between Big and Small Images */
-.new-row {
-    margin-top: 80px; /* Adjust this value to control the space */
-    display: flex;
-    justify-content: center; /* Ensures small images are aligned */
-    gap: 20px; /* Adds spacing between small images */
-}
-
 /* Smaller Image Containers */
-.new-row .popup-container {
+.new-popup-row .popup-container {
     width: 70%; /* Makes small images 70% of original size */
     margin: 0 auto; /* Centers them */
 }
