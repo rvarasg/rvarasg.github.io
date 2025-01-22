@@ -230,7 +230,7 @@ body
 .section-title h2 {
     font-size: 32px;
     font-weight: bold;
-    color: white; /* Adjust if needed */
+    color: Plum; /* Adjust if needed */
     margin-bottom: 10px;
 }
 
@@ -238,7 +238,7 @@ body
 .horizontal-line {
     width: 100px; /* Adjust width as needed */
     height: 3px;
-    background-color: white;
+    background-color: Plum;
     margin: 0 auto; /* Centers the line */
 }
 
