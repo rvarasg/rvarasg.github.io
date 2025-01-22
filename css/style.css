@@ -243,7 +243,7 @@ body
 }
 
 .wavy-line {
-  --s: 300px; /* size of the wave */
+  --s: 40px; /* size of the wave */
   --b: 4px; /* thickness of the line */
   --m: 0.4; /* curvature of the wave [0 2] */
   
@@ -309,7 +309,7 @@ body
 /* CV Button */
 .cv-button {
     display: inline-block;
-    background-color: Indigo; /* Gold color */
+    background-color: Plum; /* Gold color */
     color: black;
     font-size: 18px;
     font-weight: bold;
@@ -321,7 +321,7 @@ body
 
 /* Button Hover Effect */
 .cv-button:hover {
-    background-color: Plum; /* Orange on hover */
+    background-color: Indigo; /* Orange on hover */
     color: white;
 }
 
