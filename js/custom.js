@@ -15,15 +15,14 @@ $(document).ready(function() {
 $(document).ready(function () {
     console.log("Document is ready. Initializing popup functionality.");
 
-    // Ensure all popups are hidden on page load
-    $(".popup-overlay").removeClass("active");
+    // Ensure all popups are hidden when the page loads
+    $(".popup-overlay").hide();
 
     // Open popup when clicking an image container
-    $(".popup-container, .popup-trigger").on("click", function () {
-        const popupId = $(this).closest(".popup-container").data("popup");
-        const bgImage = $(this).closest(".popup-container").data("bg");
+    $(".popup-container").on("click", function () {
+        var popupId = $(this).attr("data-popup");
+        var bgImage = $(this).attr("data-bg");
 
-        // Debugging logs
         console.log(`Clicked popup-container. Popup ID: ${popupId}, Background Image: ${bgImage}`);
 
         // Validate popup ID
@@ -32,27 +31,33 @@ $(document).ready(function () {
             return;
         }
 
-        // Apply background image and show the popup
+        // Apply background image correctly
         if (bgImage) {
-            $(`#${popupId} .popup-content`).css("background-image", `url('${bgImage}')`);
+            $(`#${popupId} .popup-content`).css({
+                "background-image": `url('${bgImage}')`,
+                "background-size": "cover",  // Ensures full coverage
+                "background-position": "center", // Centers the image
+                "background-repeat": "no-repeat" // Prevents tiling
+            });
         }
-        
-        // Add 'active' class to show popup
-        $(`#${popupId}`).addClass("active");
+
+        // Show the popup
+        $(`#${popupId}`).fadeIn();
     });
 
     // Close popup when clicking the close button
     $(".close-popup").on("click", function () {
         console.log("Close button clicked.");
-        $(this).closest(".popup-overlay").removeClass("active"); // Hide the popup
+        $(this).closest(".popup-overlay").fadeOut();
     });
 
     // Close popup when clicking outside the popup content
     $(".popup-overlay").on("click", function (e) {
         if ($(e.target).hasClass("popup-overlay")) {
             console.log("Clicked outside the popup content. Closing popup.");
-            $(this).removeClass("active");
+            $(this).fadeOut();
         }
     });
 });
+
 
