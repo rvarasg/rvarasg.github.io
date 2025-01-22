@@ -61,7 +61,7 @@ body
 /* Increase image size by 20% and remove vertical gap */
 .popup-container {
     position: relative;
-    display: inline-block;
+    display: block;
     width: 100%; /* Increase size by 20% */
     cursor: pointer;
 }
