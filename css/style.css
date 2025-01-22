@@ -119,13 +119,24 @@ body
 
 /* Popup Content with Balanced Background Scaling */
 .popup-content {
-    background-size: contain; /* Ensures full image is visible */
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 90%; /* Adjust width for responsiveness */
+    background-size: 100% auto; /* Ensures full width without excessive zoom */
+    background-position: center center; /* Centers image properly */
+    background-repeat: no-repeat; /* Prevents tiling */
+    padding: 40px;
+    border-radius: 0px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     max-width: 600px;
-    height: auto;
-    max-height: 80vh; /* Prevents overflow */
+    max-height: 80vh;
+    overflow-y: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Ensure the title and content remain visible over the background */
