@@ -230,7 +230,7 @@ body
 .section-title h2 {
     font-size: 45px;
     font-weight: bold;
-    color: Indigo; /* Adjust if needed */
+    color: MediumPurple; /* Adjust if needed */
     margin-bottom: 10px;
 }
 
@@ -238,7 +238,7 @@ body
 .horizontal-line {
     width: 500px; /* Adjust width as needed */
     height: 4px;
-    background-color: Indigo;
+    background-color: MediumPurple;
     margin: 0 auto; /* Centers the line */
 }
 
@@ -312,7 +312,7 @@ body
 
 /* Button Hover Effect */
 .cv-button:hover {
-    background-color: Indigo; /* Orange on hover */
+    background-color: MediumPurple; /* Orange on hover */
     color: white;
 }
 
