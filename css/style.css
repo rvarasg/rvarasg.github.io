@@ -445,30 +445,33 @@ body
 
 /* Contact Email Link */
 .footer-column a {
-    color: #FFD700; /* Gold */
+    color: Plum; /* Gold */
     text-decoration: none;
     font-weight: bold;
 }
 
 .footer-column a:hover {
-    color: #FFA500; /* Orange on hover */
+    color: Indigo; /* Orange on hover */
 }
 
 /* Social Media Icons */
-.footer-column i, .footer-column img.social-icon {
-    width: 80px; /* Size of icons */
-    height: 80px;
+.footer-column i {
+    font-size: 36px; /* Increase icon size */
+    margin: 10px;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+/* ORCID Logo */
+.footer-column img.social-icon {
+    width: 36px; /* Matches icon size */
+    height: 36px;
     margin: 10px;
     transition: 0.3s ease-in-out;
 }
 
-/* ORCID & Social Icons Hover Effect */
-.footer-column img.social-icon:hover {
-    opacity: 0.7; /* Slight fade effect on hover */
-}
-
 .footer-column i:hover {
-    color: Plum; /* Gold on hover */
+    color: Plum; /* Gold hover effect */
 }
 
 
