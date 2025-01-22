@@ -92,9 +92,9 @@ body
     box-sizing: border-box; /* Prevent overflow */
 }
 
-/* Popup Overlay - Ensures popups are hidden by default */
+/* Popup Overlay - Ensure it's hidden on page load */
 .popup-overlay {
-    display: none !important;  /* Ensures popups are hidden on page load */
+    display: none !important; /* Force it to be hidden */
     position: fixed;
     top: 0;
     left: 0;
