@@ -129,12 +129,28 @@ body
     max-height: 80vh;
     overflow-y: auto;
     color: white;  /* Text color should be white for visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure the entire popup background has a dark overlay for readability */
+.popup-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: -1;
 }
 
 /* Ensure the title and content remain visible over the background */
 .popup-content h2, .popup-content p {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
-    display: inline-block;
+    background: none; /* Semi-transparent black background */
+    display: block;
     padding: 10px;
     border-radius: 0px;
     font-size: 24px;
