@@ -99,7 +99,7 @@ body
 
 /* Popup Overlay - Ensure it's hidden on page load */
 .popup-overlay {
-    display: none !important; /* Force it to be hidden */
+    display: none !important;
     position: fixed;
     top: 0;
     left: 0;
