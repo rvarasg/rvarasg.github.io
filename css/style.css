@@ -219,7 +219,28 @@ body
     height: 50px; /* Adjust this value for more/less white space */
 }
 
+/* Section Title Styling */
+.section-title {
+    text-align: center;
+    margin-bottom: 20px; /* Adds space below the title */
+    margin-top: 50px; /* Adds space above the title */
+}
 
+/* Title Text */
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white; /* Adjust if needed */
+    margin-bottom: 10px;
+}
+
+/* Horizontal White Line Under Title */
+.horizontal-line {
+    width: 100px; /* Adjust width as needed */
+    height: 3px;
+    background-color: white;
+    margin: 0 auto; /* Centers the line */
+}
 
 /* NEW /*
 
