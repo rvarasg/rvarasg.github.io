@@ -13,29 +13,30 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-    // Ensure all popups are hidden when the page loads
+    // Hide all popups on page load
     $(".popup-overlay").hide();
 
-    // Open popup when clicking an image container
-    $(".popup-container").click(function () {
-        var popupId = $(this).attr("data-popup");
-        var bgImage = $(this).attr("data-bg");
+    // Open popup on clicking the container
+    $(".popup-container").on("click", function () {
+        const popupId = $(this).data("popup");
+        const bgImage = $(this).data("bg");
 
-        // Apply the background image dynamically
-        $("#" + popupId + " .popup-content").css("background-image", "url('" + bgImage + "')");
+        // Set background dynamically
+        $("#" + popupId + " .popup-content").css("background-image", `url('${bgImage}')`);
 
-        $("#" + popupId).fadeIn(); // Open the popup
+        // Show popup
+        $("#" + popupId).fadeIn();
     });
 
-    // Close popup when clicking the close button
-    $(".close-popup").click(function () {
-        $(this).closest(".popup-overlay").fadeOut(); // Close the popup
+    // Close popup on clicking close button
+    $(".close-popup").on("click", function () {
+        $(this).closest(".popup-overlay").fadeOut();
     });
 
-    // Close popup when clicking outside the popup content
-    $(".popup-overlay").click(function (e) {
-        if ($(e.target).is(".popup-overlay")) {
-            $(this).fadeOut(); // Close if clicking outside
+    // Close popup on clicking outside content
+    $(".popup-overlay").on("click", function (e) {
+        if ($(e.target).hasClass("popup-overlay")) {
+            $(this).fadeOut();
         }
     });
 });
