@@ -13,7 +13,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-    // Ensure all popups are hidden when the page loads
+    // 🔹 Ensure all popups are hidden when the page loads
     $(".popup-overlay").hide();
 
     // Open popup when clicking an image container
@@ -39,4 +39,5 @@ $(document).ready(function () {
         }
     });
 });
+
 
