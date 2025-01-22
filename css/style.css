@@ -462,17 +462,40 @@ body
     transition: 0.3s ease-in-out;
 }
 
-/* Ensure ORCID aligns perfectly with FontAwesome icons */
+/* Ensure ORCID logo aligns perfectly with FontAwesome icons */
 .footer-column .social-icon {
-    width: 36px; /* Matches icon size */
+    width: 36px; /* Match icon size */
     height: 36px;
     margin: 10px;
     vertical-align: middle; /* Aligns with text/icons */
     display: inline-block;
+    position: relative;
+    top: 2px; /* Adjust as needed */
 }
 
 .footer-column i:hover {
     color: Plum; /* Gold hover effect */
+}
+
+/* Copyright Text Styling */
+.footer-copyright {
+    position: absolute;
+    bottom: 10px; /* Places it at the very bottom */
+    width: 100%;
+    text-align: center;
+    font-size: 12px; /* Makes it small */
+    color: white; /* Ensures visibility */
+}
+
+/* Copyright Link Styling */
+.footer-copyright a {
+    color: #FFD700; /* Gold color for visibility */
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-copyright a:hover {
+    color: #FFA500; /* Orange on hover */
 }
 
 
