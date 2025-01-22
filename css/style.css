@@ -1,4 +1,4 @@
-/*
+ /*
 	Rocket Internet by TEMPLATE STOCK
     templatestock.co @templatestock
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
@@ -148,8 +148,6 @@ body
 }
 
 
-
-
 /* NEW /*
 
 
@@ -275,49 +273,189 @@ footer .copyright
 
 
 
-/* Universal Styles */
-body {
+/* Extra Small devices  */
+@media (max-width: 480px) {
+	
+}
+
+/* Extra Small devices  */
+@media (max-width: 767px) {
+    .header-text h1 {
+        font-size: 45px;
+    }
+
+    .header-text .vertical-line {        
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .header-text p {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .feature-box {
+        padding: 0px;
+    }
+
+    .feature-box h1 {
+        font-size: 25px;
+        margin-top: 2em;
+    }
+
+    .feature-box p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .nopadding {
+        padding: 15px !important;
+        margin: 0 !important;
+    }
+
+    .portfolio img {        
+        margin-bottom: 15px;
+    }
+
+    .call-top-action h1 {
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 15px !important;
+        margin: 0px;
+    }
+
+    .call-top-action p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .call-top-action span {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    footer ul li a span {
+        width: 40px;
+        height: 40px;
+        background: #42484C;
+        display: block;
+        font-size: 22px;
+        line-height: 40px;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    footer .copyright {
+        font-size: 16px;
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+    .header-text h1 {
+        font-size: 45px;
+    }
+
+    .header-text p {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .feature-box h1 {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 1em;
+    }
+	
+    .feature-box p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .call-top-action h1 {
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 13px !important;
+        margin: 0px;
+    }
+
+    .call-top-action p {
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+
+    .call-top-action span {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 23px;
+    }
+
+    footer ul li a span {
+        width: 40px;
+        height: 40px;
+        background: #42484C;
+        display: block;
+        font-size: 22px;
+        line-height: 40px;
+        color: #fff;
+        border-radius: 50%;
+    }   
+
+    footer .copyright {
+        font-size: 18px;
+    }
+
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .feature-box {
+        padding: 10px;
+    }
+
+    .feature-box h1 {
+        font-size: 30px;    
+    }
+
+    .feature-box p {
+        font-size: 20px;
+    }
+
+    .call-top-action p
+    {
+        font-size: 19px;
+    }
+
+    .call-top-action h1 {
+        font-size: 30px;
+       margin-bottom: 15px !important;
+    }
+
+    .call-top-action span {
+        font-size: 20px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Typography CSS */
+body
+{
     font-family: 'Lato', sans-serif;
     color: #41484b;
 }
 
-.header-text h1 {
-    font-size: 50px; /* Unified font size */
-    color: #fff;
-    text-transform: uppercase;
-}
 
-.popup-container img {
-    width: 100%; /* Ensure images scale uniformly */
-    display: block;
-}
-
-.popup-content {
-    width: 90%; /* Scales to fit smaller screens */
-    max-width: 600px; /* Limit max size for larger screens */
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
-    border-radius: 10px;
-    color: white;
-    overflow-y: auto;
-    box-sizing: border-box;
-}
-
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-    .header-text h1 {
-        font-size: 40px; /* Adjust font size for smaller screens */
-    }
-    .popup-content {
-        width: 95%; /* Slightly larger for smaller screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    .popup-content {
-        width: 50%; /* Larger screens get smaller popups */
-    }
-}
 
 /* Heder */
 #homeFullScreen {
