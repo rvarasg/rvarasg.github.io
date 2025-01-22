@@ -196,6 +196,20 @@ body
     margin: 0 auto;
 }
 
+/* White Space Between Big and Small Images */
+.new-row {
+    margin-top: 80px; /* Adjust this value to control the space */
+    display: flex;
+    justify-content: center; /* Ensures small images are aligned */
+    gap: 20px; /* Adds spacing between small images */
+}
+
+/* Smaller Image Containers */
+.new-row .popup-container {
+    width: 70%; /* Makes small images 70% of original size */
+    margin: 0 auto; /* Centers them */
+}
+
 /* Reduce size of the three new images */
 .small-popup {
     width: 70%; /* Makes them 70% the size of the original images */
