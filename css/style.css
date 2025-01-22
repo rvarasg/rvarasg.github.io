@@ -118,11 +118,9 @@ body
 
 /* Popup Content - Ensure Background Image Covers Properly */
 .popup-content {
-    width: 20%; /* Make sure the popup content is large enough */
+    width: 90%; /* Make sure the popup content is large enough */
     max-width: 600px; /* Limit max size */
-    height: 80vh; /* Ensure a tall enough popup */
-    max-height: 90vh; /* Prevent overflow */
-    
+	
     background-size: cover; /* Ensure entire image fits without cutting */
     background-position: center; /* Keep the image centered */
     background-repeat: no-repeat; /* Prevent tiling */
