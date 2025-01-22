@@ -55,3 +55,31 @@ $(document).ready(function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const triggers = document.querySelectorAll(".popup-trigger");
+    
+    triggers.forEach(trigger => {
+        trigger.addEventListener("click", function () {
+            const popupId = this.getAttribute("data-popup");
+            const popup = document.getElementById(popupId);
+            const bgImage = this.getAttribute("data-bg");
+
+            if (popup) {
+                popup.querySelector(".popup-content").style.backgroundImage = `url(${bgImage})`;
+                popup.classList.add("active");
+            }
+        });
+    });
+
+    const closeButtons = document.querySelectorAll(".close-popup");
+    closeButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const popup = this.closest(".popup-overlay");
+            if (popup) {
+                popup.classList.remove("active");
+            }
+        });
+    });
+});
+
