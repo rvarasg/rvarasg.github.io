@@ -1,4 +1,4 @@
-The custom.js: /*
+/*
 	Rocket Internet by TEMPLATE STOCK
     templatestock.co @templatestock
 */
@@ -36,8 +36,3 @@ $(document).ready(function () {
         }
     });
 });
-
-
-
-
-
