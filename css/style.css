@@ -228,7 +228,7 @@ body
 
 /* Title Text */
 .section-title h2 {
-    font-size: 42px;
+    font-size: 45px;
     font-weight: bold;
     color: Plum; /* Adjust if needed */
     margin-bottom: 10px;
@@ -236,7 +236,7 @@ body
 
 /* Horizontal White Line Under Title */
 .horizontal-line {
-    width: 200px; /* Adjust width as needed */
+    width: 350px; /* Adjust width as needed */
     height: 4px;
     background-color: Plum;
     margin: 0 auto; /* Centers the line */
