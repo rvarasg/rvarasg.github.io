@@ -462,12 +462,13 @@ body
     transition: 0.3s ease-in-out;
 }
 
-/* ORCID Logo */
-.footer-column img.social-icon {
+/* Ensure ORCID aligns perfectly with FontAwesome icons */
+.footer-column .social-icon {
     width: 36px; /* Matches icon size */
     height: 36px;
     margin: 10px;
-    transition: 0.3s ease-in-out;
+    vertical-align: middle; /* Aligns with text/icons */
+    display: inline-block;
 }
 
 .footer-column i:hover {
