@@ -58,19 +58,24 @@ body
 }
 
 
-/* Container for Image and Title */
+/* Increase image size by 20% and remove vertical gap */
 .popup-container {
     position: relative;
-    display: inline-block;
-    width: 100%;
+    display: block;
+    width: 120%; /* Increase size by 20% */
     cursor: pointer;
 }
 
-/* Image Styling */
 .popup-container img {
-    width: 100%;
+    width: 100%; /* Ensures the image scales properly */
     display: block;
-    border-radius: 10px;
+    border-radius: 0px;
+}
+
+/* Remove vertical gap between rows */
+.row {
+    margin: 0; /* Remove extra margins */
+    padding: 0; /* Remove extra padding */
 }
 
 /* Title Over Image */
