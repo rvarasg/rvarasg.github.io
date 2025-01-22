@@ -64,11 +64,17 @@ document.addEventListener("DOMContentLoaded", function () {
         trigger.addEventListener("click", function () {
             const popupId = this.getAttribute("data-popup"); // Get the target popup ID
             const popup = document.getElementById(popupId); // Find the popup
-            const bgImage = this.getAttribute("data-bg"); // Get the background image
+            const bgImage = this.getAttribute("data-bg"); // Get the background image URL
 
             if (popup) {
-                // Set the background image of the popup-content
-                popup.querySelector(".popup-content").style.backgroundImage = `url(${bgImage})`;
+                // Find or create the <img> element inside .popup-content
+                let img = popup.querySelector(".popup-content img");
+                if (!img) {
+                    img = document.createElement("img"); // Create a new <img> if none exists
+                    popup.querySelector(".popup-content").prepend(img); // Add the image to the content
+                }
+
+                img.src = bgImage; // Set the image source
                 popup.classList.add("active"); // Show the popup
             }
         });
