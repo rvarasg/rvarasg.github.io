@@ -183,6 +183,34 @@ body
 }
 
 
+/* Add white space between sections */
+.spacer {
+    height: 50px; /* Adjust as needed */
+    width: 100%;
+    background: white; /* Ensures the gap is visible */
+}
+
+/* Ensure the three images are on the same row */
+.new-popup-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    margin: 0 auto;
+}
+
+/* Reduce size of the three new images */
+.small-popup {
+    width: 70%; /* Makes them 70% the size of the original images */
+}
+
+/* Make sure images inside small popups also scale */
+.small-popup img {
+    width: 100%;
+    display: block;
+    border-radius: 0px;
+}
+
+
 /* NEW /*
 
 
