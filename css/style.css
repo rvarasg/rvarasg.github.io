@@ -216,7 +216,7 @@ body
 }
 
 .white-space {
-    height: 50px; /* Adjust this value for more/less white space */
+    height: 20px; /* Adjust this value for more/less white space */
 }
 
 /* Section Title Styling */
@@ -228,7 +228,7 @@ body
 
 /* Title Text */
 .section-title h2 {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: bold;
     color: Plum; /* Adjust if needed */
     margin-bottom: 10px;
@@ -236,8 +236,8 @@ body
 
 /* Horizontal White Line Under Title */
 .horizontal-line {
-    width: 100px; /* Adjust width as needed */
-    height: 3px;
+    width: 200px; /* Adjust width as needed */
+    height: 4px;
     background-color: Plum;
     margin: 0 auto; /* Centers the line */
 }
