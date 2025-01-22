@@ -148,7 +148,7 @@ body
 /* Ensure the title and content remain visible over the background */
 .popup-content h2, .popup-content p {
     background: none; /* Semi-transparent black background */
-    display: block;
+    display: inline-block;
     padding: 10px;
     border-radius: 0px;
     font-size: 24px;
