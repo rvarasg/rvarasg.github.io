@@ -134,6 +134,9 @@ body
     overflow-y: auto;
     color: white;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Ensure the title and content remain visible over the background */
