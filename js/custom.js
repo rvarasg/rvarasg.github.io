@@ -57,29 +57,33 @@ $(document).ready(function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    // Select all popup triggers
     const triggers = document.querySelectorAll(".popup-trigger");
-    
+
     triggers.forEach(trigger => {
         trigger.addEventListener("click", function () {
-            const popupId = this.getAttribute("data-popup");
-            const popup = document.getElementById(popupId);
-            const bgImage = this.getAttribute("data-bg");
+            const popupId = this.getAttribute("data-popup"); // Get the target popup ID
+            const popup = document.getElementById(popupId); // Find the popup
+            const bgImage = this.getAttribute("data-bg"); // Get the background image
 
             if (popup) {
+                // Set the background image of the popup-content
                 popup.querySelector(".popup-content").style.backgroundImage = `url(${bgImage})`;
-                popup.classList.add("active");
+                popup.classList.add("active"); // Show the popup
             }
         });
     });
 
+    // Close popup when the close button is clicked
     const closeButtons = document.querySelectorAll(".close-popup");
     closeButtons.forEach(button => {
         button.addEventListener("click", function () {
             const popup = this.closest(".popup-overlay");
             if (popup) {
-                popup.classList.remove("active");
+                popup.classList.remove("active"); // Hide the popup
             }
         });
     });
 });
+
 
