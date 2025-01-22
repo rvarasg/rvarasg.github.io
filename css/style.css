@@ -116,25 +116,41 @@ body
     align-items: center;
 }
 
-/* Popup Content with Balanced Background Scaling */
+/* Popup Content - Ensure Background Image Covers Properly */
 .popup-content {
-    background-size: cover; /* Ensures the image scales properly while maintaining aspect ratio */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
+    width: 90%; /* Make sure the popup content is large enough */
+    max-width: 600px; /* Limit max size */
+    height: 80vh; /* Ensure a tall enough popup */
+    max-height: 90vh; /* Prevent overflow */
+    
+    background-size: contain; /* Ensure entire image fits without cutting */
+    background-position: center center; /* Keep the image centered */
+    background-repeat: no-repeat; /* Prevent tiling */
+    
     padding: 40px;
     border-radius: 0px;
-    width: 90%; /* Adjust the size as needed */
-    max-width: 600px;
-    max-height: 80vh;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     overflow-y: auto;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 10000;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay to Improve Readability */
+.popup-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Subtle dark overlay */
+    z-index: -1;
 }
 
 /* Ensure the title and content remain visible over the background */
