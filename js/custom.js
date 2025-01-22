@@ -13,44 +13,48 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-    console.log("Document is ready. Initializing popup functionality.");
+    // Debugging helper to log
+    console.log("Document is ready.");
 
-    // Ensure all popups are hidden on page load
+    // Ensure all popups are hidden when the page loads
     $(".popup-overlay").hide();
 
-    // Handle clicking a popup trigger
+    // Open popup on clicking the container
     $(".popup-container").on("click", function () {
-        const popupId = $(this).data("popup"); // Get the popup ID
-        const bgImage = $(this).data("bg"); // Get the background image
+        const popupId = $(this).data("popup");
+        const bgImage = $(this).data("bg");
 
-        // Debugging logs
-        console.log(`Clicked popup-container. Popup ID: ${popupId}, Background Image: ${bgImage}`);
+        // Debug logs
+        console.log(`Clicked popup-container with data-popup: ${popupId} and data-bg: ${bgImage}`);
 
-        // Validate popup ID
+        // Check if the popup exists
         if (!popupId || !$(`#${popupId}`).length) {
-            console.error(`Popup with ID '${popupId}' not found.`);
+            console.error(`Popup with id "${popupId}" not found.`);
             return;
         }
 
-        // Apply background image and show the popup
+        // Apply background image
         $(`#${popupId} .popup-content`).css("background-image", `url('${bgImage}')`);
-        $(`#${popupId}`).fadeIn(); // Display the popup
+
+        // Show the popup
+        $(`#${popupId}`).fadeIn();
     });
 
-    // Handle closing the popup when clicking the close button
+    // Close popup on clicking the close button
     $(".close-popup").on("click", function () {
         console.log("Close button clicked.");
-        $(this).closest(".popup-overlay").fadeOut(); // Hide the popup
+        $(this).closest(".popup-overlay").fadeOut();
     });
 
-    // Handle closing the popup when clicking outside the content
+    // Close popup on clicking outside content
     $(".popup-overlay").on("click", function (e) {
         if ($(e.target).hasClass("popup-overlay")) {
-            console.log("Clicked outside the popup content. Closing popup.");
+            console.log("Clicked outside popup content.");
             $(this).fadeOut();
         }
     });
 });
+
 
 
 
