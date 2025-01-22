@@ -13,8 +13,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-    // Ensure all popups are hidden on page load
-    $(".popup-overlay").hide();
     // Open popup when clicking an image container
     $(".popup-container").click(function () {
         var popupId = $(this).attr("data-popup");
