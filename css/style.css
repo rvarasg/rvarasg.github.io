@@ -139,6 +139,12 @@ body
     align-items: center;
 }
 
+.popup-content img {
+    width: 100%; /* Ensures the image scales properly */
+    display: block;
+    border-radius: 0px;
+}
+
 /* Ensure the title and content remain visible over the background */
 .popup-content h2, .popup-content p {
     background: none; /* Semi-transparent black background */
