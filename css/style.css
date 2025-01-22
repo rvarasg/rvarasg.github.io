@@ -294,14 +294,14 @@ body
 
 /* About Me Title */
 .about-content h2 {
-    font-size: 36px;
+    font-size: 42px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 /* About Me Text */
 .about-content p {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -309,7 +309,7 @@ body
 /* CV Button */
 .cv-button {
     display: inline-block;
-    background-color: #FFD700; /* Gold color */
+    background-color: Indigo; /* Gold color */
     color: black;
     font-size: 18px;
     font-weight: bold;
@@ -321,7 +321,7 @@ body
 
 /* Button Hover Effect */
 .cv-button:hover {
-    background-color: #FFA500; /* Orange on hover */
+    background-color: Plum; /* Orange on hover */
     color: white;
 }
 
