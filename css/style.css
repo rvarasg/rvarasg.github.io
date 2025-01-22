@@ -72,12 +72,6 @@ body
     border-radius: 0px;
 }
 
-/* Remove vertical gap between rows */
-.row {
-    margin: 0; /* Remove extra margins */
-    padding: 0; /* Remove extra padding */
-}
-
 /* Title Over Image */
 .popup-title {
     position: absolute;
