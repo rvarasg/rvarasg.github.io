@@ -13,47 +13,45 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-    // Debugging helper to log
-    console.log("Document is ready.");
+    console.log("Document is ready. Initializing popup functionality.");
 
-    // Ensure all popups are hidden when the page loads
+    // Ensure all popups are hidden on page load
     $(".popup-overlay").hide();
 
-    // Open popup on clicking the container
+    // Handle clicking a popup trigger
     $(".popup-container").on("click", function () {
-        const popupId = $(this).data("popup");
-        const bgImage = $(this).data("bg");
+        const popupId = $(this).data("popup"); // Get the popup ID
+        const bgImage = $(this).data("bg"); // Get the background image
 
-        // Debug logs
-        console.log(`Clicked popup-container with data-popup: ${popupId} and data-bg: ${bgImage}`);
+        // Debugging logs
+        console.log(`Clicked popup-container. Popup ID: ${popupId}, Background Image: ${bgImage}`);
 
-        // Check if the popup exists
+        // Validate popup ID
         if (!popupId || !$(`#${popupId}`).length) {
-            console.error(`Popup with id "${popupId}" not found.`);
+            console.error(`Popup with ID '${popupId}' not found.`);
             return;
         }
 
-        // Apply background image
+        // Apply background image and show the popup
         $(`#${popupId} .popup-content`).css("background-image", `url('${bgImage}')`);
-
-        // Show the popup
-        $(`#${popupId}`).fadeIn();
+        $(`#${popupId}`).fadeIn(); // Display the popup
     });
 
-    // Close popup on clicking the close button
+    // Handle closing the popup when clicking the close button
     $(".close-popup").on("click", function () {
         console.log("Close button clicked.");
-        $(this).closest(".popup-overlay").fadeOut();
+        $(this).closest(".popup-overlay").fadeOut(); // Hide the popup
     });
 
-    // Close popup on clicking outside content
+    // Handle closing the popup when clicking outside the content
     $(".popup-overlay").on("click", function (e) {
         if ($(e.target).hasClass("popup-overlay")) {
-            console.log("Clicked outside popup content.");
+            console.log("Clicked outside the popup content. Closing popup.");
             $(this).fadeOut();
         }
     });
 });
+
 
 
 
