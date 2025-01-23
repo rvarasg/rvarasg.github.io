@@ -416,11 +416,12 @@ body
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start; /* Align columns at the top */
     max-width: 1000px;
     margin: 0 auto;
     text-align: left;
+    gap: 30px;
 }
 
 /* Footer Columns */
@@ -429,6 +430,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Keeps text left-aligned by default */
+    min-width: 200px;
 }
 
 .footer-column.center {
