@@ -425,8 +425,10 @@ body
 
 /* Footer Columns */
 .footer-column {
-    flex: 1;
-    padding: 20px;
+    flex: 1; /* Ensures equal column width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
 }
 
 /* Footer Titles */
