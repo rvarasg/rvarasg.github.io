@@ -430,7 +430,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Keeps text left-aligned by default */
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .footer-column.center {
@@ -438,7 +438,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: center; /* Center all content inside this column (On the Web) */
-    min-width: 250px;
+    min-width: 320px;
 }
 
 /* Footer Titles */
