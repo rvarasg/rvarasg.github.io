@@ -438,7 +438,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: center; /* Center all content inside this column (On the Web) */
-    min-width: 320px;
+    min-width: 380px;
 }
 
 /* Footer Titles */
