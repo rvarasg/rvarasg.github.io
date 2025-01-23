@@ -432,6 +432,9 @@ body
 }
 
 .footer-column.center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center; /* Center all content inside this column (On the Web) */
 }
 
