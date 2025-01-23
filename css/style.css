@@ -428,7 +428,14 @@ body
     flex: 1; /* Ensures equal column width */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers content horizontally */
+    align-items: flex-start; /* Keeps text left-aligned */
+}
+
+.footer-column h4 {
+    align-self: center; /* Centers only the title */
+    text-align: center;
+    font-size: 24px;
+    width: 100%; /* Ensures the text is centered within the column */
 }
 
 /* Footer Titles */
