@@ -391,11 +391,12 @@ body
 
 /* Footer Background with About Me Image */
 .footer-section {
-    display: flex;
-    justify-content: space-between; /* Distribute evenly */
-    max-width: 1200px; /* Keep it aligned with upper sections */
-    margin: auto; /* Center the entire footer */
-    padding: 20px; /* Add some spacing */
+    position: relative;
+    width: 100%;
+    background: url('../images/4.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 /* Dark Overlay for Readability */
@@ -510,8 +511,6 @@ body
     font-size: 24px; /* Adjust size */
     color: white; /* Adjust as needed */
 }
-
-
 
 
 /* Universal Styles */
