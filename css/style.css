@@ -314,7 +314,7 @@ body
 .gallery a {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 5; /* Ensures a fixed 4:5 ratio */
+    aspect-ratio: 4 / 4; /* Ensures a fixed 4:5 ratio */
     overflow: hidden;
     border-radius: 0px; /* Optional: rounded corners */
 }
@@ -336,7 +336,7 @@ body
 
 .spotify-container {
     margin-top: 40px;
-    max-width: 800px;
+    max-width: 1000px;
     display: block; /* Ensures the div behaves like a block element */
     margin-left: auto; /* Centers the div */
     margin-right: auto; /* Centers the div */
