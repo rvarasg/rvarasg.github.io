@@ -335,8 +335,7 @@ body
 /* NEW */
 
 .spotify-container {
-    margin-top: 40px; /* Space after gallery */
-    text-align: center;
+    margin-top: 40px auto; /* Space after gallery */
     max-width: 800px;
 }
 
