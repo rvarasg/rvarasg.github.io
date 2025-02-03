@@ -60,4 +60,15 @@ $(document).ready(function () {
     });
 });
 
+window.addEventListener('scroll', function() {
+    const sectionTitle = document.querySelector('.section-with-title');
+    const title = sectionTitle.querySelector('.section-title');
+    
+    if (window.scrollY > sectionTitle.offsetTop) {
+        sectionTitle.classList.add('sticky');
+    } else {
+        sectionTitle.classList.remove('sticky');
+    }
+});
+
 
