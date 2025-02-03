@@ -307,8 +307,8 @@ body
 .gallery {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* 6 images per row */
-    gap: 10px;
-    padding: 20px;
+    gap: 0px;
+    padding: 0px;
 }
 
 .gallery a {
@@ -316,7 +316,7 @@ body
     width: 100%;
     aspect-ratio: 4 / 5; /* Ensures a fixed 4:5 ratio */
     overflow: hidden;
-    border-radius: 8px; /* Optional: rounded corners */
+    border-radius: 0px; /* Optional: rounded corners */
 }
 
 .gallery img {
