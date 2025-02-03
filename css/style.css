@@ -306,7 +306,7 @@ body
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 images per row */
+    grid-template-columns: repeat(5, 1fr); /* 6 images per row */
     gap: 0px;
     padding: 0px;
 }
