@@ -168,6 +168,38 @@ body
     cursor: pointer;
 }
 
+/* Initial section styling */
+.section-with-title {
+    position: relative;
+    padding: 50px 0;
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 10; /* Make sure title is above any other content */
+}
+
+/* Sticky effect when you scroll */
+.section-with-title.sticky .section-title {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to the title */
+    padding: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Add padding to the section so it's not hidden by sticky title */
+.section-with-title.sticky {
+    padding-top: 120px; /* Space for the sticky title */
+}
+
 
 /* Add white space between sections */
 .spacer {
