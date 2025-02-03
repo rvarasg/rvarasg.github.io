@@ -332,7 +332,13 @@ body
 }
 
 
-/* NEW /*
+/* NEW */
+
+.spotify-container {
+    margin-top: 40px; /* Space after gallery */
+    text-align: center;
+    max-width: 800px;
+}
 
 
 /* feature */
