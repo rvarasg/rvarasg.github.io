@@ -79,7 +79,7 @@ body
     color: white;
     font-size: 28px;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
     text-align: center;
     padding: 10px;
     box-sizing: border-box; /* Prevent overflow */
@@ -135,7 +135,7 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Subtle dark overlay */
+    background: rgba(0, 0, 0, 0.3); /* Subtle dark overlay */
     z-index: -1;
 }
 
@@ -201,7 +201,7 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Darkens the background */
+    background: rgba(0, 0, 0, 0.3); /* Darkens the background */
     z-index: -1;
 }
 
@@ -377,7 +377,7 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust darkness */
+    background: rgba(0, 0, 0, 0.3); /* Adjust darkness */
     z-index: 1;
 }
 
@@ -586,7 +586,7 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust darkness */
+    background: rgba(0, 0, 0, 0.3); /* Adjust darkness */
     z-index: 1;
 }
 
@@ -667,7 +667,7 @@ body
 /* Copyright Text Styling */
 .footer-copyright {
     position: absolute;
-    bottom: 5px; /* Move it a little lower */
+    bottom: 30px; /* Move it a little lower */
     width: 100%;
     text-align: center;
     font-size: 6px; /* Make it even smaller */
@@ -719,7 +719,7 @@ body {
     width: 90%; /* Scales to fit smaller screens */
     max-width: 600px; /* Limit max size for larger screens */
     padding: 20px;
-    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
     border-radius: 10px;
     color: white;
     overflow-y: auto;
@@ -905,8 +905,8 @@ footer ul li a span
 
 footer .copyright
 {
-    font-size: 22px;
-    margin-bottom: 20px;
+    font-size: 6px;
+    margin-bottom: 6px;
     display: block;
 }
 
