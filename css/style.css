@@ -168,6 +168,77 @@ body
     cursor: pointer;
 }
 
+#popup-about-me {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-about-me .popup-content {
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    overflow-y: auto;
+    position: relative;
+}
+
+#popup-about-me .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-nav li {
+    margin: 0 15px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.top-nav a:hover {
+    color: Plum;
+    border-bottom: 2px solid Plum;
+}
+
+
 /* Initial section styling */
 .section-with-title {
     position: relative;
@@ -183,6 +254,7 @@ body
     font-size: 2.5rem;
     font-weight: bold;
     position: relative;
+    font-family: Verdana, sans-serif;
     z-index: 10; /* Make sure title is above any other content */
 }
 
