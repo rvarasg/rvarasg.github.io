@@ -168,6 +168,39 @@ body
     cursor: pointer;
 }
 
+/* Initial section styling */
+.section-with-title {
+    position: relative;
+    padding: 50px 0;
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 10; /* Make sure title is above any other content */
+}
+
+/* Sticky effect when you scroll */
+.section-with-title.sticky .section-title {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to the title */
+    padding: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Add padding to the section so it's not hidden by sticky title */
+.section-with-title.sticky {
+    padding-top: 120px; /* Space for the sticky title */
+}
+
+
 /* Add white space between sections */
 .spacer {
     height: 50px; /* Adjust as needed */
@@ -241,7 +274,7 @@ body
 .about-section {
     position: relative;
     width: 100%;
-    height: 70vh; 
+    height: 70vh; /* Adjust the height as needed */
     background: url('../images/4.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -249,7 +282,6 @@ body
     text-align: center;
     color: white;
     padding: 50px 20px;
-    cursor: pointer; /* Makes it clear it's clickable */
 }
 
 /* Dark Overlay for Readability */
@@ -260,7 +292,7 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5); /* Adjust darkness */
     z-index: 1;
 }
 
@@ -276,65 +308,33 @@ body
     font-size: 42px;
     font-weight: bold;
     margin-bottom: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
 }
 
-/* Hover Effect */
-.about-content h2:hover {
-    color: Plum;
+/* About Me Text */
+.about-content p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-/* Popup Styling */
-.popup {
-    display: none; 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    background: url('../images/4.jpg') no-repeat center center/cover; /* Same background */
-    padding: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    z-index: 1000;
+/* CV Button */
+.cv-button {
+    display: inline-block;
+    background-color: Plum; /* Gold color */
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
 }
 
-/* Dark Overlay for Popup */
-.popup::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-}
-
-/* Popup Content */
-.popup-content {
-    position: relative;
-    z-index: 2;
-    padding: 20px;
-}
-
-/* Close Button */
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    cursor: pointer;
+/* Button Hover Effect */
+.cv-button:hover {
+    background-color: MediumPurple; /* Orange on hover */
     color: white;
 }
-
-.close:hover {
-    color: Plum;
-}
-
 
 .gallery {
     display: grid;
