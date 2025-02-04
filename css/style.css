@@ -205,6 +205,13 @@ body
     z-index: -1;
 }
 
+#popup-about-me h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: White; /* Adjust if needed */
+    margin-bottom: 10px;
+}
+
 #popup-about-me .close-popup {
     position: absolute;
     top: 10px;
