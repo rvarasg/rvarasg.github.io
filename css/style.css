@@ -183,7 +183,7 @@ body
 
 #popup-about-me .popup-content {
     width: 90%;
-    max-width: 600px;
+    max-width: 1200px;
     padding: 40px;
     background: url('../images/4.jpg') no-repeat center center/cover;
     border-radius: 10px;
