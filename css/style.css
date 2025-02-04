@@ -341,17 +341,19 @@ body
 
 /* Horizontal White Line Under Title */
 .horizontal-line {
-    width: 500px; /* Adjust width as needed */
-    height: 4px;
-    background-color: SlateBlue;
+    width: 400px; /* Adjust width as needed */
+    height: 5px;
+    background-color: Black;
+    border-radius: 2px;
     margin: 0 auto; /* Centers the line */
 }
 
 /* Horizontal White Line Under Title */
 .horizontal-line-2 {
-    width: 500px; /* Adjust width as needed */
-    height: 4px;
+    width: 400px; /* Adjust width as needed */
+    height: 5px;
     background-color: white;
+    border-radius: 2px;
     margin: 0 auto; /* Centers the line */
 }
 
