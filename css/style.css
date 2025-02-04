@@ -496,8 +496,8 @@ body
 }
 
 .nopadding {
-   padding: 10 !important;
-   margin: 10 !important;
+   padding: 10px !important;
+   margin: 10px !important;
 }
 
 .feature-box
