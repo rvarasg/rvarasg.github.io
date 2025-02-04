@@ -600,7 +600,7 @@ body
     justify-content: space-around;
     align-items: flex-start; /* Align columns at the top */
     max-width: 1150px;
-    min-width: 500px;
+    min-width: 800px;
     margin: 0 auto;
     text-align: left;
     gap: 10px;
@@ -673,7 +673,7 @@ body
     bottom: 30px; /* Move it a little lower */
     width: 100%;
     text-align: center;
-    font-size: 6px; /* Make it even smaller */
+    font-size: 4px; /* Make it even smaller */
     color: white; /* Ensures readability */
 }
 
@@ -681,7 +681,7 @@ body
 .footer-copyright a {
     color: Plum; /* Gold color for visibility */
     text-decoration: none;
-    font-size: 6px; /* Match the small size */
+    font-size: 4px; /* Match the small size */
 }
 
 .footer-copyright a:hover {
@@ -908,7 +908,7 @@ footer ul li a span
 
 footer .copyright
 {
-    font-size: 6px;
+    font-size: 4px;
     margin-bottom: 6px;
     display: block;
 }
