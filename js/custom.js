@@ -59,3 +59,11 @@ $(document).ready(function () {
         }
     });
 });
+
+function openPopup() {
+    document.getElementById("about-popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("about-popup").style.display = "none";
+}
