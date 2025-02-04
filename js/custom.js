@@ -59,3 +59,21 @@ $(document).ready(function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const triggers = document.querySelectorAll(".popup-trigger");
+    const closeButtons = document.querySelectorAll(".close-popup");
+
+    triggers.forEach(trigger => {
+        trigger.addEventListener("click", function() {
+            const popupId = this.getAttribute("data-popup");
+            document.getElementById(popupId).style.display = "flex";
+        });
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            this.parentElement.parentElement.style.display = "none";
+        });
+    });
+});
