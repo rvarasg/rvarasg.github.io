@@ -670,7 +670,7 @@ body
     bottom: 5px; /* Move it a little lower */
     width: 100%;
     text-align: center;
-    font-size: 10px; /* Make it even smaller */
+    font-size: 6px; /* Make it even smaller */
     color: white; /* Ensures readability */
 }
 
@@ -678,7 +678,7 @@ body
 .footer-copyright a {
     color: Plum; /* Gold color for visibility */
     text-decoration: none;
-    font-size: 10px; /* Match the small size */
+    font-size: 6px; /* Match the small size */
 }
 
 .footer-copyright a:hover {
