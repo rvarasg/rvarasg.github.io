@@ -151,9 +151,9 @@ body
 .popup-content h1{
     background: none; /* Semi-transparent black background */
     display: inline-block;
-    padding: 3px;
+    padding: 1px;
     border-radius: 0px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .popup-content p {
