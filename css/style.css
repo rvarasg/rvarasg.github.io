@@ -107,7 +107,7 @@ body
 /* Popup Content - Ensure Background Image Covers Properly */
 .popup-content {
     width: 90%; /* Make sure the popup content is large enough */
-    max-width: 600px; /* Limit max size */
+    max-width: 900px; /* Limit max size */
 	
     background-size: cover; /* Ensure entire image fits without cutting */
     background-position: center; /* Keep the image centered */
