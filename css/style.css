@@ -727,7 +727,7 @@ body {
 
 .popup-content {
     width: 90%; /* Scales to fit smaller screens */
-    max-width: 600px; /* Limit max size for larger screens */
+    max-width: 900px; /* Limit max size for larger screens */
     padding: 20px;
     background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
     border-radius: 10px;
