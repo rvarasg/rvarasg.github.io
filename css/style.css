@@ -596,6 +596,15 @@ body
     text-align: center;
 }
 
+.footer-section span{
+    position: absolute;
+    bottom: 50px; /* Move it a little lower */
+    width: 100%;
+    text-align: left;
+    font-size: 4px; /* Make it even smaller */
+    color: white; /* Ensures readability */
+}
+
 /* Dark Overlay for Readability */
 .footer-section::before {
     content: "";
