@@ -598,10 +598,10 @@ body
 
 .footer-section span{
     position: absolute;
-    bottom: 120px; /* Move it a little lower */
+    bottom: 0px; /* Move it a little lower */
     width: 100%;
     text-align: left;
-    font-size: 4px; /* Make it even smaller */
+    font-size: 6px; /* Make it even smaller */
     color: white; /* Ensures readability */
 }
 
