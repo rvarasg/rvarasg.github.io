@@ -592,13 +592,13 @@ body
     width: 100%;
     background: url('../images/publ.jpg') no-repeat center center/cover;
     color: white;
-    padding: 50px 20px;
+    padding: 20px 20px;
     text-align: center;
 }
 
 .footer-section span{
     position: absolute;
-    bottom: 50px; /* Move it a little lower */
+    bottom: 120px; /* Move it a little lower */
     width: 100%;
     text-align: left;
     font-size: 4px; /* Make it even smaller */
