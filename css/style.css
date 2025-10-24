@@ -23,7 +23,7 @@ body
 }
 
 #homeFullScreen {
-    background-image: url('../images/Euclid-ERO-Messier78.8K8K.tif');
+    background-image: url('../images/euclid.jpg');
     overflow: hidden;
 }
 
@@ -780,7 +780,7 @@ body {
 }
 
 #homeFullScreen {
-    background-image: url('../images/Euclid-ERO-Messier78.8K8K.tif');
+    background-image: url('../images/euclid.jpg');
     overflow: hidden;
 }
 
@@ -940,5 +940,6 @@ footer .copyright
 
 
 }
+
 
 
